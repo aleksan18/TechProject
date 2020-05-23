@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Apartment List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Address</th>
+        <th>Zip</th>
+        <th>Size</th>
+        <th>Floor</th>
+        <th>Furniture</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="apartment: ${apartments}">
+    <td th:text="${apartment.apID}"/>
+    <td th:text="${apartment.address}"/>
+    <td th:text="${apartment.zip}"/>
+    <td th:text="${apartment.size}"/>
+    <td th:text="${apartment.floor}"/>
+    <td th:text="${apartment.has_furniture}"/>
+    <td th:text="${apartment.price}"/>
+
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

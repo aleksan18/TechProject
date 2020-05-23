@@ -49,9 +49,9 @@ public class HomeController {
         return "redirect:/";
     }
 
-    @GetMapping("/update/{id}")
-    public String update(@PathVariable("id") int id, Model model) {
-        model.addAttribute("apartment", apartmentService.findApartmentById(id));
+    @GetMapping("/update/{apID}")
+    public String update(@PathVariable("apID") int apID, Model model) {
+        model.addAttribute("apartment", apartmentService.findApartmentById(apID));
         return "home/update";
     }
 

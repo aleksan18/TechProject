@@ -34,10 +34,11 @@ public class ApartmentRepo {
         return apartment;
     }
 
-    public Apartment updateApartment(int id, Apartment apartment){
-        String sql = "UPDATE apartments SET address = ?, zip = ?, rent = ?, size = ?, floor = ?, has_furniture = ? WHERE apID = ?";
-        template.update(sql, apartment.getAddress(), apartment.getZip(),apartment.getPrice(), apartment.getSize(), apartment.getFloor(), apartment.getHas_furniture(), apartment.getApID());
-        return null;
+    public void updateApartment(int id, Apartment apartment){
+        String sql = "UPDATE apartments SET address = ?, zip = ?, size = ?, floor = ?, " +
+                     "has_furniture = ?, price = ? WHERE apID = ?";
+        template.update(sql, apartment.getAddress(), apartment.getZip(), apartment.getSize(),
+                        apartment.getFloor(), apartment.getHas_furniture(), apartment.getPrice(), id);
     }
     public void deleteApartment(int id){
         String sql = "DELETE FROM apartments WHERE apID = ?;";

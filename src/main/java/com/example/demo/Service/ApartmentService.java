@@ -25,8 +25,8 @@ public class ApartmentService {
         return apartmentRepo.findApartmentById(id);
     }
 
-    public Apartment updateApartment(int id, Apartment apartment){
-        return apartmentRepo.updateApartment(id, apartment);
+    public void updateApartment(int id, Apartment apartment){
+        apartmentRepo.updateApartment(id, apartment);
     }
 
     public void deleteApartment(int id){

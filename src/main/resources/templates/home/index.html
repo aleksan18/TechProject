@@ -18,6 +18,7 @@
         <th>Floor</th>
         <th>Furniture</th>
         <th>Price</th>
+        <th>Options</th>
     </tr>
     </thead>
     <tbody>
@@ -29,9 +30,14 @@
     <td th:text="${apartment.floor}"/>
     <td th:text="${apartment.has_furniture}"/>
     <td th:text="${apartment.price}"/>
-
-
+    <a th:href="@{'/viewOne/' + ${apartment.apID}}">
+        <button>View Info</button>
+    </a>
     </tr>
+    <br />
+    <a href="/create">
+        <button >Add new Apartment</button>
+    </a>
     </tbody>
 </table>
 </body>

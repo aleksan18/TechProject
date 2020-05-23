@@ -25,6 +25,21 @@ public class HomeController {
         return "home/index";
     }
 
+    @GetMapping("/create")
+    public  String create(){
+        return "home/create";
+    }
 
+    @PostMapping("/create")
+    public String create(@ModelAttribute Apartment apartment){
+        apartmentService.addApartment(apartment);
+        return "redirect:/";
 
+    }
+
+    @GetMapping("/viewOne/{apID}")
+    public String viewOne(@PathVariable("apID") int apID, Model model){
+        model.addAttribute("apartment", apartmentService.findApartmentById(apID));
+        return "home/viewOne";
+    }
 }

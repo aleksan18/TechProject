@@ -21,8 +21,10 @@ public class ApartmentRepo {
         return template.query(sql, rowMapper);
     }
 
-    public Apartment addApartment(Apartment apartment){
-        return null;
+    public void addApartment(Apartment apartment){
+        String sql = "INSERT INTO apartments VALUES (DEFAULT, ?, ?, ?, ?, ?, ?);";
+        template.update(sql, apartment.getAddress(), apartment.getZip(), apartment.getSize(),
+                        apartment.getFloor(), apartment.getHas_furniture(),apartment.getPrice());
     }
 
     public Apartment findApartmentById(int id){

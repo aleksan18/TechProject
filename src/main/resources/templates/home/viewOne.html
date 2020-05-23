@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Apartment Information</h1>
+    <span th:text="${apartment.address}"/>
+
+    <span th:text="${apartment.address}"/>
+    <span th:text="${apartment.zip}"/>
+    <span th:text="${apartment.size}"/>
+    <span th:text="${apartment.floor}"/>
+    <span th:text="${apartment.has_furniture}"/>
+    <span th:text="${apartment.price}"/>
+
+    <br/>
+    <a href="/">
+        <button class="btn_back">Go Back</button>
+    </a>
+</body>
+</html>

@@ -17,8 +17,8 @@ public class ApartmentService {
         return apartmentRepo.fetchAll();
     }
 
-    public Apartment addApartment(Apartment apartment){
-        return apartmentRepo.addApartment(apartment);
+    public void addApartment(Apartment apartment){
+        apartmentRepo.addApartment(apartment);
     }
 
     public Apartment findApartmentById(int id){
@@ -29,7 +29,7 @@ public class ApartmentService {
         return apartmentRepo.updateApartment(id, apartment);
     }
 
-    public Boolean deleteApartment(int id){
-        return apartmentRepo.deleteApartment(id);
+    public void deleteApartment(int id){
+        apartmentRepo.deleteApartment(id);
     }
 }

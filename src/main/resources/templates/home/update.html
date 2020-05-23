@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Apartment</title>
+</head>
+<body>
+<h1>Update Apartment</h1>
+
+<form action="/updateApartment" method="post">
+    <input type="text" name="apID" th:value="${apartment.apID}">
+    <input type="text" name="address" th:value="${apartment.address}">
+    <input type="text" name="zip" th:value="${apartment.zip}">
+    <input type="text" name="size" th:value="${apartment.size}">
+    <input type="text" name="floor" th:value="${apartment.floor}">
+    <input type="text" name="has_furniture" th:value="${apartment.has_furniture}">
+    <input type="text" name="price" th:value="${apartment.price}">
+
+    <input type="submit" value="Save Changes">
+</form>
+</body>
+</html>

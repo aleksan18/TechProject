@@ -28,14 +28,19 @@ public class ApartmentRepo {
     }
 
     public Apartment findApartmentById(int id){
-        return null;
+        String sql = "SELECT * FROM apartments WHERE apID = ?;";
+        RowMapper<Apartment> rowMapper = new BeanPropertyRowMapper<>(Apartment.class);
+        Apartment apartment = template.queryForObject(sql, rowMapper, id);
+        return apartment;
     }
 
     public Apartment updateApartment(int id, Apartment apartment){
+        String sql = "UPDATE apartments SET address = ?, zip = ?, rent = ?, size = ?, floor = ?, has_furniture = ? WHERE apID = ?";
+        template.update(sql, apartment.getAddress(), apartment.getZip(),apartment.getPrice(), apartment.getSize(), apartment.getFloor(), apartment.getHas_furniture(), apartment.getApID());
         return null;
     }
-
-    public Boolean deleteApartment(int id){
-        return null;
+    public void deleteApartment(int id){
+        String sql = "DELETE FROM apartments WHERE apID = ?;";
+        template.update(sql, id);
     }
 }

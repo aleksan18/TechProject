@@ -23,20 +23,28 @@
     </thead>
     <tbody>
     <tr th:each="apartment: ${apartments}">
-    <td th:text="${apartment.apID}"/>
-    <td th:text="${apartment.address}"/>
-    <td th:text="${apartment.zip}"/>
-    <td th:text="${apartment.size}"/>
-    <td th:text="${apartment.floor}"/>
-    <td th:text="${apartment.has_furniture}"/>
-    <td th:text="${apartment.price}"/>
-    <a th:href="@{'/viewOne/' + ${apartment.apID}}">
-        <button>View Info</button>
-    </a>
+        <td th:text="${apartment.apID}"/>
+        <td th:text="${apartment.address}"/>
+        <td th:text="${apartment.zip}"/>
+        <td th:text="${apartment.size}"/>
+        <td th:text="${apartment.floor}"/>
+        <td th:text="${apartment.has_furniture}"/>
+        <td th:text="${apartment.price}"/>
+        <td>
+            <a th:href="@{'/viewOne/' + ${apartment.apID}}">
+                <button>View Info</button>
+            </a>
+            <a th:href="@{'/delete/' + ${apartment.apID}}">
+                <button>Delete</button>
+            </a>
+            <a th:href="@{'/update/'+${apartment.apID}}">
+                <button>Update</button>
+            </a>
+        </td>
     </tr>
     <br />
     <a href="/create">
-        <button >Add new Apartment</button>
+        <button>Add new Apartment</button>
     </a>
     </tbody>
 </table>

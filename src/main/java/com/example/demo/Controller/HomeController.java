@@ -42,4 +42,22 @@ public class HomeController {
         model.addAttribute("apartment", apartmentService.findApartmentById(apID));
         return "home/viewOne";
     }
+
+    @GetMapping("/delete/{apID}")
+    public String delete(@PathVariable("apID") int apID){
+        apartmentService.deleteApartment(apID);
+        return "redirect:/";
+    }
+
+    @GetMapping("/update/{id}")
+    public String update(@PathVariable("id") int id, Model model) {
+        model.addAttribute("apartment", apartmentService.findApartmentById(id));
+        return "home/update";
+    }
+
+    @PostMapping("/updateApartment")
+    public String updateApartment(@ModelAttribute Apartment apartment){
+        apartmentService.updateApartment(apartment.getApID(), apartment);
+        return "redirect:/";
+    }
 }

@@ -22,7 +22,7 @@ public class HomeController {
     public String index(Model model){
         List<Apartment> apartmentList = apartmentService.fetchAll();
         model.addAttribute("apartments", apartmentList);
-        return "index";
+        return "home/index";
     }
 
     @GetMapping("/create")

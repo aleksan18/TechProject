@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'apartments'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e448fc52908942a38a0a6e194f9ebc63 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_457a62d948054e3188cee7d384ccf73c }}
         package: '${{ github.workspace }}/target/*.jar'

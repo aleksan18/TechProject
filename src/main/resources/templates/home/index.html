@@ -15,7 +15,7 @@
         <th><img src="cph4.jpg" width="370px"height="300px"></th>
     </tr>
 </table>
-    <h1>Apartment List</h1>
+    <h1>Apartments in Copenhagen</h1>
 
 <a href="/create">
     <button>Add new Apartment</button>
@@ -24,7 +24,7 @@
 <table id = "table", class="center">
     <thead>
     <tr>
-        <th>Id</th>
+
         <th>Address</th>
         <th>Zip</th>
         <th>Size</th>
@@ -32,12 +32,12 @@
         <th>Furniture</th>
         <th>Price</th>
         <th>Options</th>
-        <th>Photo</th>
+
     </tr>
     </thead>
     <tbody>
     <tr th:each="apartment: ${apartments}">
-        <td th:text="${apartment.apID}"/>
+
         <td th:text="${apartment.address}"/>
         <td th:text="${apartment.zip}"/>
         <td th:text="${apartment.size}"/>
@@ -55,7 +55,6 @@
                 <button id="button3">Update</button>
             </a>
         </td>
-        <td><img src="photo.jpeg" width="100px"height="100px"></td>
     </tr>
     </tbody>
 </table>

@@ -1,7 +1,10 @@
 body{
     background-color: aliceblue;
     background-size: cover;
+    align-content: center;
 }
+
+
 h1{
 font-family: "Times New Roman";
     font-size: 60px;
@@ -15,7 +18,7 @@ table{
     border-collapse: collapse;
     border-left: none;
     border-right: none;
-    width: 100%;
+    width: 80%;
 }
 table.center{
     margin-left: auto;
@@ -26,14 +29,14 @@ tr:last-child{
 }
 th{
     font-family: "Times New Roman", Arial;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     text-align: center;
     color: blue;
 }
 td{
     font-family: "Times New Roman", Arial;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
     text-align: center;
     color: green;

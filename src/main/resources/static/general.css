@@ -10,7 +10,6 @@ font-family: "Times New Roman";
     font-size: 60px;
     text-align: center;
     font-weight: bold;
-    color: yellow;
 
 }
 table{
@@ -39,13 +38,12 @@ td{
     font-size: 30px;
     font-style: italic;
     text-align: center;
-    color: green;
 }
 a{
     text-decoration: none;
 }
 #button1 {
-    background-color: blue;
+    background-color: lightcoral;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -54,7 +52,7 @@ a{
     border-radius: 12px;
 }
 #button2 {
-    background-color: green;
+    background-color: red;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -63,7 +61,7 @@ a{
     border-radius: 12px;
 }
 #button3 {
-    background-color: yellow;
+    background-color: greenyellow;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -81,4 +79,47 @@ a{
 label{
     width: 600px;
     text-align: right;
+    display: inline-block;
+}
+#add{
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+#can{
+    width: 10%;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+#createnew{
+    width: 10%;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+.btn_sb{
+    width: 10%;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+#view{
+    font-family: "Times New Roman", Arial;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+}
+.btn_back{
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: greenyellow;
 }

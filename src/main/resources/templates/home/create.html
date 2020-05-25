@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/general.css">
 </head>
 <body>
     <h1>Add new Apartment</h1>
@@ -31,11 +32,13 @@
         <input type="text" name="price" required pattern="\d*">
         <br/>
         <br/>
+        <div id = createnew>
         <input type="submit" value="Add new Apartment">
+        </div>
     </form>
     <br />
     <a href="/">
-        <button class="btn_cancel">Cancel</button>
+        <button class="btn_cancel", id="can">Cancel</button>
     </a>
 </body>
 </html>

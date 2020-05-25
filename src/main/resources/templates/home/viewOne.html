@@ -2,10 +2,12 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/general.css">
     <title>Title</title>
 </head>
 <body>
     <h1>Apartment Information</h1>
+    <div id="view">
     <span>ID: </span><span th:text="${apartment.apID}"/><br />
     <span>Address: </span><span th:text="${apartment.address}"/><br />
     <span>Zip: </span><span th:text="${apartment.zip}"/><br />
@@ -13,7 +15,7 @@
     <span>Floor: </span><span th:text="${apartment.floor}"/><br />
     <span>Has Furniture: </span><span th:text="${apartment.has_furniture}"/><br />
     <span>Price: </span><span th:text="${apartment.price}"/><span> dkk</span><br />
-
+    </div>
     <br/>
     <a href="/">
         <button class="btn_back">Go Back</button>

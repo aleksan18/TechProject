@@ -1,0 +1,81 @@
+body{
+    background-color: aliceblue;
+    background-size: cover;
+}
+h1{
+font-family: "Times New Roman";
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: yellow;
+
+}
+table{
+    border:solid 2px;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+tr:last-child{
+    border-bottom: none;
+}
+th{
+    font-family: "Times New Roman", Arial;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+}
+td{
+    font-family: "Times New Roman", Arial;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: green;
+}
+a{
+    text-decoration: none;
+}
+#button1 {
+    background-color: blue;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+#button2 {
+    background-color: green;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+#button3 {
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+#photo{
+    width: 100%;
+    height: 50px;
+}
+#form{
+    text-align: center;
+}
+label{
+    width: 600px;
+    text-align: right;
+}

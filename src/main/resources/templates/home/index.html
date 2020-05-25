@@ -3,12 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/general.css">
     <title>Title</title>
 </head>
 <body>
-
-<h1>Apartment List</h1>
 <table>
+    <tr>
+        <th><img src="cph.jpg" width="370px"height="300px"></th>
+        <th><img src="cph2.jpeg" width="370px"height="300px"></th>
+        <th><img src="cph2.jpg" width="370px"height="300px"></th>
+        <th><img src="cph4.jpg" width="370px"height="300px"></th>
+    </tr>
+</table>
+    <h1>Apartment List</h1>
+
+<a href="/create">
+    <button>Add new Apartment</button>
+</a>
+<br />
+<table id = "table", class="center">
     <thead>
     <tr>
         <th>Id</th>
@@ -33,21 +46,17 @@
         <td th:text="${apartment.price}"/>
         <td>
             <a th:href="@{'/viewOne/' + ${apartment.apID}}">
-                <button>View Info</button>
+                <button id="button1">View Info</button>
             </a>
             <a th:href="@{'/delete/' + ${apartment.apID}}">
-                <button>Delete</button>
+                <button id="button2">Delete</button>
             </a>
             <a th:href="@{'/update/'+${apartment.apID}}">
-                <button>Update</button>
+                <button id="button3">Update</button>
             </a>
         </td>
         <td><img src="photo.jpeg" width="100px"height="100px"></td>
     </tr>
-    <br />
-    <a href="/create">
-        <button>Add new Apartment</button>
-    </a>
     </tbody>
 </table>
 </body>

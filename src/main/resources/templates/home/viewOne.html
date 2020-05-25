@@ -6,14 +6,13 @@
 </head>
 <body>
     <h1>Apartment Information</h1>
-    <span th:text="${apartment.address}"/>
-
-    <span th:text="${apartment.address}"/>
-    <span th:text="${apartment.zip}"/>
-    <span th:text="${apartment.size}"/>
-    <span th:text="${apartment.floor}"/>
-    <span th:text="${apartment.has_furniture}"/>
-    <span th:text="${apartment.price}"/>
+    <span>ID: </span><span th:text="${apartment.apID}"/><br />
+    <span>Address: </span><span th:text="${apartment.address}"/><br />
+    <span>Zip: </span><span th:text="${apartment.zip}"/><br />
+    <span>Apartment Size: </span><span th:text="${apartment.size}"/><span> m<sup>2</sup></span><br />
+    <span>Floor: </span><span th:text="${apartment.floor}"/><br />
+    <span>Has Furniture: </span><span th:text="${apartment.has_furniture}"/><br />
+    <span>Price: </span><span th:text="${apartment.price}"/><span> dkk</span><br />
 
     <br/>
     <a href="/">

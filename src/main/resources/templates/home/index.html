@@ -18,9 +18,11 @@
     <h1>Apartments in Copenhagen</h1>
 
 <a href="/create">
-    <button id ="add">Add new Apartment</button>
+    <button class ="add">Add new Apartment</button>
 </a>
-<br />
+<br/>
+<br/>
+<br/>
 <table id = "table", class="center">
     <thead>
     <tr>
@@ -37,7 +39,6 @@
     </thead>
     <tbody>
     <tr th:each="apartment: ${apartments}">
-
         <td th:text="${apartment.address}"/>
         <td th:text="${apartment.zip}"/>
         <td th:text="${apartment.size}"/>
@@ -48,11 +49,11 @@
             <a th:href="@{'/viewOne/' + ${apartment.apID}}">
                 <button id="button1">View Info</button>
             </a>
-            <a th:href="@{'/delete/' + ${apartment.apID}}">
-                <button id="button2">Delete</button>
-            </a>
             <a th:href="@{'/update/'+${apartment.apID}}">
                 <button id="button3">Update</button>
+            </a>
+            <a th:href="@{'/delete/' + ${apartment.apID}}">
+                <button id="button2">Delete</button>
             </a>
         </td>
     </tr>

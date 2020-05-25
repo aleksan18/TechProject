@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="/general.css">
 </head>
 <body>
+<table>
+    <tr>
+        <th><img src="/cph.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpeg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph4.jpg" width="370px"height="300px"></th>
+    </tr>
+</table>
     <h1>Add new Apartment</h1>
     <form action="/create" method="post">
         <label>Enter Address: </label>
@@ -32,9 +40,9 @@
         <input type="text" name="price" required pattern="\d*">
         <br/>
         <br/>
-        <div id = createnew>
-        <input type="submit" value="Add new Apartment">
-        </div>
+
+        <input id = "add" type="submit" value="Add new Apartment">
+
     </form>
     <br />
     <a href="/">

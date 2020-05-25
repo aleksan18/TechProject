@@ -6,9 +6,16 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <tr>
+        <th><img src="/cph.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpeg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph4.jpg" width="370px"height="300px"></th>
+    </tr>
+</table>
     <h1>Apartment Information</h1>
     <div id="view">
-    <span>ID: </span><span th:text="${apartment.apID}"/><br />
     <span>Address: </span><span th:text="${apartment.address}"/><br />
     <span>Zip: </span><span th:text="${apartment.zip}"/><br />
     <span>Apartment Size: </span><span th:text="${apartment.size}"/><span> m<sup>2</sup></span><br />
@@ -16,6 +23,7 @@
     <span>Has Furniture: </span><span th:text="${apartment.has_furniture}"/><br />
     <span>Price: </span><span th:text="${apartment.price}"/><span> dkk</span><br />
     </div>
+    <br/>
     <br/>
     <a href="/">
         <button class="btn_back">Go Back</button>

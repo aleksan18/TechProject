@@ -6,9 +6,17 @@
     <link rel="stylesheet" type="text/css" href="/general.css">
 </head>
 <body>
+<table>
+    <tr>
+        <th><img src="/cph.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpeg" width="370px"height="300px"></th>
+        <th><img src="/cph2.jpg" width="370px"height="300px"></th>
+        <th><img src="/cph4.jpg" width="370px"height="300px"></th>
+    </tr>
+</table>
     <h1>Update Apartment</h1>
 
-    <form action="/updateApartment" method="post">
+    <form id ="form2" action="/updateApartment" method="post">
         <label>Apartment ID: </label>
         <input type="text" name="apID" th:value="${apartment.apID}" readonly /><br />
         <br/>
@@ -30,7 +38,7 @@
         <label>Change Price: </label>
         <input type="text" name="price" th:value="${apartment.price}" required pattern="\d*" /><br />
         <br/>
-        <input class = "btn_sb" type="submit" value="Save Changes">
+        <input id = "add" type="submit" value="Save Changes">
     </form>
     <br />
     <a href="/">

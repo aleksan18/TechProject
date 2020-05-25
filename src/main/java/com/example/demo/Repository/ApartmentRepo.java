@@ -16,7 +16,7 @@ public class ApartmentRepo {
     JdbcTemplate template;
 
     public List<Apartment> fetchAll(){
-        String sql = "SELECT * FROM apartments;";
+        String sql = "SELECT * FROM apartments ORDER BY zip;";
         RowMapper<Apartment> rowMapper = new BeanPropertyRowMapper<>(Apartment.class);
         return template.query(sql, rowMapper);
     }
